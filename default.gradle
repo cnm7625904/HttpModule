@@ -1,0 +1,136 @@
+ext{
+    android = [
+            compileSdkVersion       : 30,
+            buildToolsVersion       : "30.0.2",
+            minSdkVersion           : 21,
+            targetSdkVersion        : 30,
+            versionCode             : 1,
+            versionName             : "1.0.0",
+            runnerName             : "android.support.test.runner.AndroidJUnitRunner",
+            runnerNameX             : "androidx.test.runner.AndroidJUnitRunner"
+    ]
+    version = [
+            FlycoTabLayout_Lib:"2.1.2@aar",
+            logger:"2.2.0",
+            PictureSelector: "v2.2.3",
+            YCAndroidTool: "1.2.1",
+            Toasty: "1.4.2",
+            androidSupportSdkVersion: "28.0.0",
+            androidX_SdkVersion: "1.2.0",
+            retrofitSdkVersion      : "2.4.0",
+            glideSdkVersion         : "4.9.0",
+            canarySdkVersion        : "1.5.4",
+            constraintVersion       : "1.0.2",
+            okhttp                  : "4.7.2",
+            zxing_version           : "3.3.3",
+            constraintlayout           : "2.0.4",
+            junit           : "4.12",
+            extJunit           : "1.1.2",
+            runner           : "1.0.2",
+            runnerX           : "1.3.0",
+            espresso_core           : "3.0.2",
+            espresso_coreX           : "3.3.0",
+            barlibrary           : "2.3.0",
+            autosize           : "1.2.1",
+            logging_interceptor           : "4.7.1",
+            rxbinding           : "0.4.0",
+            conscrypt           : "2.2.1",
+            SmartRefreshLayout           : "1.1.0-alpha-14",
+            SmartRefreshHeader           : "1.1.0-alpha-14",
+            recyclerview_swipe           : "1.2.0",
+            BaseRecyclerViewAdapterHelper           : "2.9.30",
+            urlconnection           : "4.7.1",
+            constraint_layout           : "1.1.3",
+            recyclerviewX           : "1.1.0",
+            material           : "1.2.0-alpha05",
+            navigation           : "2.2.0",
+            butterknife           : "10.2.3",
+            butterknife_compiler           : "10.2.3",
+            rxandroid2           : "2.1.0",
+            rxjava2           : "2.1.11",
+            rxrelay           : "2.0.0",
+            router           : "1.5.1",
+            router_compiler           : "1.5.1",
+            takephoto           : "4.0.3",
+            tablayout           : "2.1.2@aar",
+            eventbus           : "3.0.0",
+            utilcode           : "1.30.6",
+            easypermissions           : "3.0.0",
+            SmartRefreshLayoutX           : "2.0.3",
+            SmartRefreshLayoutXHeader           : "2.0.3",
+            SmartRefreshLayoutXFooter           : "2.0.3",
+            BaseRecyclerViewAdapterHelperX           : "3.0.4",
+    ]
+
+    dependencies = [
+            "BaseRecyclerViewAdapterHelperX"             : "com.github.CymChad:BaseRecyclerViewAdapterHelper:${version["BaseRecyclerViewAdapterHelperX"]}",
+//            https://github.com/scwang90/SmartRefreshLayout
+            "SmartRefreshLayoutXFooter"             : "com.scwang.smart:refresh-footer-classics:${version["SmartRefreshLayoutXFooter"]}",
+            "SmartRefreshLayoutXHeader"             : "com.scwang.smart:refresh-header-material:${version["SmartRefreshLayoutXHeader"]}",
+            "SmartRefreshLayoutX"             : "com.scwang.smart:refresh-layout-kernel:${version["SmartRefreshLayoutX"]}",
+            "butterknife_compiler"             : "com.jakewharton:butterknife-compiler:${version["butterknife_compiler"]}",
+            "butterknife"             : "com.jakewharton:butterknife:${version["butterknife"]}",
+            "navigation"             : "com.ashokvarma.android:bottom-navigation-bar:${version["navigation"]}",
+            "material"             : "com.google.android.material:material:${version["material"]}",
+            "recyclerviewX"             : "androidx.recyclerview:recyclerview:${version["recyclerviewX"]}",
+            "recyclerviewX"             : "androidx.recyclerview:recyclerview:${version["recyclerviewX"]}",
+            "FlycoTabLayout_Lib"             : "com.flyco.tablayout:FlycoTabLayout_Lib:${version["FlycoTabLayout_Lib"]}",
+            "logger"             : "com.orhanobut:logger:${version["logger"]}",
+            "constraint_layout"             : "com.android.support.constraint:constraint-layout:${version["constraint_layout"]}",
+            "PictureSelector"             : "com.github.LuckSiege.PictureSelector:picture_library:${version["PictureSelector"]}", //图片选择
+            "urlconnection"             : "com.squareup.okhttp3:okhttp-urlconnection:${version["urlconnection"]}", //cookie管理
+            "BaseRecyclerViewAdapterHelper"   : "com.github.CymChad:BaseRecyclerViewAdapterHelper:${version["BaseRecyclerViewAdapterHelper"]}",//通用适配器
+            "recyclerview-swipe"             : "com.yanzhenjie:recyclerview-swipe:${version["recyclerview_swipe"]}",//侧滑删除
+            "SmartRefreshLayout"             : "com.scwang.smartrefresh:SmartRefreshLayout:${version["SmartRefreshLayout"]}",//刷新
+            "SmartRefreshHeader"             : "com.scwang.smartrefresh:SmartRefreshHeader:${version["SmartRefreshHeader"]}",//刷新头部
+            "YCAndroidTool"             : "cn.yc:ToolLib:${version["YCAndroidTool"]}",//网络传输加密
+            "conscrypt"             : "org.conscrypt:conscrypt-android:${version["conscrypt"]}",//网络传输加密
+            "rxbinding"             : "com.jakewharton.rxbinding:rxbinding:${version["rxbinding"]}",
+            "Toasty"             : "com.github.GrenderG:Toasty:${version["Toasty"]}",
+            "logging_interceptor"             : "com.squareup.okhttp3:logging-interceptor:${version["logging_interceptor"]}",
+            "appcompat-v7"             : "com.android.support:appcompat-v7:${version["androidSupportSdkVersion"]}",
+            "design"                   : "com.android.support:design:${version["androidSupportSdkVersion"]}",
+            "palette"                  : "com.android.support:palette-v7:${version["androidSupportSdkVersion"]}",
+            "support-v4"               : "com.android.support:support-v4:${version["androidSupportSdkVersion"]}",
+            "cardview-v7"              : "com.android.support:cardview-v7:${version["androidSupportSdkVersion"]}",
+            "annotations"              : "com.android.support:support-annotations:${version["androidSupportSdkVersion"]}",
+            "recyclerview-v7"          : "com.android.support:recyclerview-v7:${version["androidSupportSdkVersion"]}",
+            "autosize"     : "me.jessyan:autosize:${version["autosize"]}",
+            "barlibrary"     : "com.gyf.barlibrary:barlibrary:${version["barlibrary"]}",
+            "constraintlayout"     : "androidx.constraintlayout:constraintlayout:${version["constraintlayout"]}",
+            "junit"     : "junit:junit:${version["junit"]}",
+            "runner"     : "com.android.support.test:runner:${version["runner"]}",
+            "espresso_core"     : "com.android.support.test.espresso:espresso-core:${version["espresso_core"]}",
+            //androidX版本库
+            "appcompatX"             : "androidx.appcompat:appcompat:${version["androidX_SdkVersion"]}",
+            "runnerX"     : "androidx.test:runner:${version["runnerX"]}",
+            "espresso_coreX"     : "androidx.test.espresso:espresso-core:${version["espresso_coreX"]}",
+            //network
+            "retrofit"                 : "com.squareup.retrofit2:retrofit:${version["retrofitSdkVersion"]}",
+            "retrofit-converter-gson"  : "com.squareup.retrofit2:converter-gson:${version["retrofitSdkVersion"]}",
+            "retrofit-adapter-rxjava2"  : "com.squareup.retrofit2:adapter-rxjava2:${version["retrofitSdkVersion"]}",
+            "okhttp"                   : "com.squareup.okhttp3:okhttp:${version["okhttp"]}",
+            "rxandroid2"                : "io.reactivex.rxjava2:rxandroid:${version["rxandroid2"]}",
+            "rxjava2"                   : "io.reactivex.rxjava2:rxjava:${version["rxjava2"]}}",
+            "rxrelay"                  : "com.jakewharton.rxrelay2:rxrelay:${version["rxrelay"]}",
+
+            //router
+            "router"                      : "com.alibaba:arouter-api:${["router"]}",
+            "router-compiler"             : "com.alibaba:arouter-compiler:${["router_compiler"]}",
+
+            //image
+            "glide"                    : "com.github.bumptech.glide:glide:${version["glideSdkVersion"]}",
+            "glide-compiler"           : "com.github.bumptech.glide:compiler:${version["glideSdkVersion"]}",
+            "takephoto"                : "com.jph.takephoto:takephoto_library:${version["takephoto"]}",
+
+            //view
+            "tablayout"                 : "com.flyco.tablayout:FlycoTabLayout_Lib:${version["tablayout"]}",
+
+            //tools
+            "eventbus"                  : "org.greenrobot:eventbus:${version["eventbus"]}",
+            "utilcode"                  : "com.blankj:utilcodex:${version["utilcode"]}",
+            "easypermissions"           : "pub.devrel:easypermissions:${version["easypermissions"]}",
+            "zxing"                     : "com.google.zxing:core:${version["zxing_version"]}",
+    ]
+
+}
