@@ -14,14 +14,10 @@ public class ApiWrapper {
 
     public static <T> T getInstance(Class<T> type){
         T t = RetrofitWrapper
-                .getInstance("", null)
+                .getInstance("http://127.0.0.1", null)
                 .create(type);
         return t;
     }
 
-//    public <T> T getParcelable(@NonNull final String key,
-//                               @NonNull final Parcelable.Creator<T> creator) {
 }
-//    public static <T> T fromJson(final String json, final Class<T> type) {
-//        return GSON.fromJson(json, type);
-//    }
+
